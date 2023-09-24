@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bortakuz <bortakuz@student.42kocaeli.co    +#+  +:+       +#+        */
+/*   By: envyilma <envyilma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 17:13:09 by bortakuz          #+#    #+#             */
-/*   Updated: 2023/09/23 17:24:57 by bortakuz         ###   ########.fr       */
+/*   Updated: 2023/09/24 14:20:13 by envyilma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ int	main(int ac, char **av, char **envp)
 		close(fd[0]);
 		close(fd[1]);
 		default_command(envp, "ls");
+		exit (0);
 	}
 	int pid2= fork();
 	if(pid2 < 0)
@@ -50,6 +51,7 @@ int	main(int ac, char **av, char **envp)
 		close(fd[0]);
 		close(fd[1]);
 		default_command(envp, "cat");
+		exit (0);
 	}
 	close(fd[0]);
 	close(fd[1]);
