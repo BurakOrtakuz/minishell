@@ -6,7 +6,7 @@
 /*   By: bortakuz <bortakuz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 12:25:27 by bortakuz          #+#    #+#             */
-/*   Updated: 2023/09/23 17:17:00 by bortakuz         ###   ########.fr       */
+/*   Updated: 2023/09/24 13:31:51 by bortakuz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,6 @@ char	**get_path(char **envp)
 static void	run_execve(char *path, char **parameters, char **envp)
 {
 	pid_t	pid;
-	int		ret;
 
 	pid = fork();
 	if (pid < 0)
@@ -52,7 +51,7 @@ static void	run_execve(char *path, char **parameters, char **envp)
 	{
 		execve(path, parameters, envp);
 	}
-	waitpid(pid, &ret, 0);
+	waitpid(pid, NULL, 0);
 }
 
 void	default_command(char **envp, char *data)
