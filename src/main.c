@@ -6,9 +6,10 @@
 /*   By: bortakuz <bortakuz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 17:13:09 by bortakuz          #+#    #+#             */
-/*   Updated: 2023/09/25 16:48:44 by bortakuz         ###   ########.fr       */
+/*   Updated: 2023/09/25 16:57:13 by bortakuz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include <stdio.h>
 #include "../inc/minishell.h"

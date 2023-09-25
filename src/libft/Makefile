@@ -106,14 +106,14 @@ OBJS = ft_atoi.o \
 all : $(NAME)
 
 $(NAME) :
-		$(CC) $(FLAGS) -c $(SRCS)
-		ar rcs $(NAME) $(OBJS)
+		@$(CC) $(FLAGS) -c $(SRCS)
+		@ar rcs $(NAME) $(OBJS)
 
 clean:
-	rm -f  $(OBJS)
+	@rm -f  $(OBJS)
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
 re: fclean all
 
