@@ -79,6 +79,8 @@ $(NAME):			$(LIBFT) $(MAIN) $(OBJS)
 					@printf "█"
 					@sleep 0.01
 					@printf "\033[0m\n\n"
+					@echo "   GitHub    ~>  \033[4;1;34mburakortakuz\033[0m"
+					@echo "   42 Intra  ~>  \033[4;1;34mbortakuz\033[0m \n"
 					@echo "   GitHub    ~>  \033[4;1;34menverbey\033[0m"
 					@echo "   42 Intra  ~>  \033[4;1;34menvyilma\033[0m \n"
 

@@ -54,3 +54,4 @@ dkms.conf
 bin/minishell
 .DS_Store
 .gitignore
+bin/minishell
